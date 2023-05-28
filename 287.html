@@ -1,0 +1,70 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swipe</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <!-- headers -->
+      <header class="brand-container flex">
+        <div class="brand-img pointer">
+          <img src="/public/logo.png" alt="" />
+        </div>
+        <div class="menu pointer"><img src="/public/menu.svg" alt="" /></div>
+        <div class="cross-ico pointer">
+          <img src="/public/cross.svg" alt="" />
+        </div>
+      </header>
+      <!-- main body section -->
+      <section class="main-section">
+        <p class="secondary-title font-5">
+          Monitoring where we buy the most helps gain control
+        </p>
+        <p class="title pt-8 font-4">Notify me when I shop weekly more than</p>
+        <div class="limit-container">
+          <div class="limit-process">
+            <input
+              type="range"
+              min="0"
+              max="1000"
+              value="350"
+              class="slider-range w-full"
+              id="slide-range"
+            />
+            <div class="value-container flex-between item-center">
+              <div class="flex gap-40 item-center">
+                <p class="primary-budget">1</p>
+              </div>
+              <p class="secondary-budget">5</p>
+              <div class="flex gap-8 item-center">
+                <p class="total-budget">10</p>
+                <img src="/public/edit.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-between py-4">
+          <p class="secondary-title">Choose store</p>
+          <p class="remove-btn">remove</p>
+        </div>
+        <div class="py-4">
+          <select name="market" id="market" class="market">
+            <option value="Emazon">Emazon</option>
+            <option value="E-bay">E-bay</option>
+            <option value="Alibaba">Alibaba</option>
+          </select>
+        </div>
+        <button class="store-btn font-6 center pointer">Add a Store</button>
+        <button class="notify-btn font-6 center pointer">
+          Monitor where you buy
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
